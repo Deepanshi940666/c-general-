@@ -19,4 +19,16 @@ int main(){
     for(auto i:a){   //for each loop
         cout<<i<<endl;
     }
+    //iterator
+    vector<int>::iterator itr;
+    itr=a.begin();//return the pointer to the first element
+    cout<<"Begin: "<<*itr<<endl;
+    itr=a.end()-1; //end functn gives u pointer pointing after the last element
+    cout<<"End: "<<*itr<<endl;
+    for(itr=a.begin();itr!=a.end();itr++){
+        cout<<*itr<<endl;
+    }
+    for(auto &i: a){
+        cout<<i*2<<endl;
+    }
 }
